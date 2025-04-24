@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="Style.css">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,39 @@
   <body>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Full Name"><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="name@pdx.edu"><br>
+        </form>
+        <fieldset>
+           <legend>Favorite Character:</legend>
+           <label>
+             <input type="radio" name="character" value="Spongebob">
+             Spongebob
+           </label><br>
+           <label>
+            <input type="radio" name="character" value="Sandy">
+            Sandy
+           </label><br>
+           <label>
+            <input type="radio" name="character" value="Patrick">
+            Patrick
+           </label>
+        </fieldset><br>
+        
+        <fieldset>
+          <legend>Are you a fan of the show?</legend>
+            <label>
+              <input type="checkbox" name="episodes" value="episodes">
+              Yes, I have watched all episodes!
+            </label><br>
+            <label>
+              <input type="checkbox" name="memes" value="memes">
+              Yes, it's got the best memes.
+            </label><br>
+        </fieldset><br>    
       </form>
     </main>
   </body>
